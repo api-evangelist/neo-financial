@@ -35,6 +35,10 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/neo-financial-domain-security.yml
+- type: Packages
+  url: packages/neo-financial-packages.yml
 - type: Website
   url: https://www.neofinancial.com/
 - type: GitHubOrganization

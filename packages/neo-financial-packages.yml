@@ -1,0 +1,102 @@
+generated: '2026-07-23'
+method: searched
+source: https://www.npmjs.com/org/neofinancial + https://github.com/neofinancial
+note: >-
+  First-party open-source packages published by Neo Financial's engineering
+  team. These are internal engineering tooling / utility libraries (config,
+  scheduling, AWS helpers, GraphQL scalars, an ESLint config, and a Node client
+  for the Flinks aggregator), NOT client SDKs for a Neo Financial consumer API —
+  Neo publishes no first-party public API, so there is no API client library and
+  no `type: SDKs` pointer is emitted. Recorded here to document Neo's real public
+  developer/open-source surface.
+packages:
+- language: javascript
+  registry: npm
+  name: "@neofinancial/chrono"
+  url: https://www.npmjs.com/package/@neofinancial/chrono
+  repository: https://github.com/neofinancial/chrono
+  install: npm install @neofinancial/chrono
+  official: true
+  category: tooling
+  summary: Durable, distributed task scheduler for Node.js.
+- language: javascript
+  registry: npm
+  name: "@neofinancial/chrono-mongo-datastore"
+  url: https://www.npmjs.com/package/@neofinancial/chrono-mongo-datastore
+  install: npm install @neofinancial/chrono-mongo-datastore
+  official: true
+  category: tooling
+  summary: MongoDB datastore backend for chrono.
+- language: javascript
+  registry: npm
+  name: "@neofinancial/chrono-postgres-datastore"
+  url: https://www.npmjs.com/package/@neofinancial/chrono-postgres-datastore
+  install: npm install @neofinancial/chrono-postgres-datastore
+  official: true
+  category: tooling
+  summary: Postgres datastore backend for chrono.
+- language: javascript
+  registry: npm
+  name: config-dug
+  url: https://www.npmjs.com/package/config-dug
+  repository: https://github.com/neofinancial/config-dug
+  install: npm install config-dug
+  official: true
+  category: tooling
+  summary: Layered application configuration loader with secrets-manager support.
+- language: javascript
+  registry: npm
+  name: awsx
+  url: https://www.npmjs.com/package/awsx
+  repository: https://github.com/neofinancial/awsx
+  install: npm install -g awsx
+  official: true
+  category: cli
+  summary: CLI to manage and switch between AWS profiles/accounts.
+- language: javascript
+  registry: npm
+  name: ccscan
+  url: https://www.npmjs.com/package/ccscan
+  repository: https://github.com/neofinancial/ccscan
+  install: npm install -g ccscan
+  official: true
+  category: cli
+  summary: Scans a codebase for potential credit-card numbers.
+- language: javascript
+  registry: npm
+  name: serverless-plugin-neo
+  url: https://www.npmjs.com/package/serverless-plugin-neo
+  repository: https://github.com/neofinancial/serverless-plugin-neo
+  install: npm install --save-dev serverless-plugin-neo
+  official: true
+  category: tooling
+  summary: Serverless Framework plugin bundling TypeScript builds with esbuild.
+- language: javascript
+  registry: npm
+  name: graphql-date-scalars
+  url: https://www.npmjs.com/package/graphql-date-scalars
+  repository: https://github.com/neofinancial/graphql-date-scalars
+  install: npm install graphql-date-scalars
+  official: true
+  category: tooling
+  summary: GraphQL Date/DateTime custom scalar types.
+- language: javascript
+  registry: npm
+  name: node-flinks
+  url: https://www.npmjs.com/package/node-flinks
+  repository: https://github.com/neofinancial/node-flinks
+  install: npm install node-flinks
+  official: true
+  category: integration-client
+  summary: >-
+    Node.js client for the Flinks financial-data aggregator API (the third-party
+    aggregator Neo uses); a client for an external API, not a Neo API SDK.
+- language: javascript
+  registry: npm
+  name: eslint-config-neo
+  url: https://www.npmjs.com/package/eslint-config-neo
+  repository: https://github.com/neofinancial/eslint-config-neo
+  install: npm install --save-dev eslint-config-neo
+  official: true
+  category: tooling
+  summary: Neo Financial's shared ESLint configuration.
