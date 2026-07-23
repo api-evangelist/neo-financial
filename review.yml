@@ -1,0 +1,112 @@
+aid: neo-financial
+name: Neo Financial
+review:
+  question: Does Neo Financial expose a public first-party developer API or developer portal?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Neo Financial publishes no public first-party developer API and no
+    developer portal. Probes of developer.neofinancial.com,
+    developers.neofinancial.com, api.neofinancial.com, and
+    docs.neofinancial.com all fail to resolve (curl exit / HTTP 000 — no DNS,
+    no host). Neo is a Canadian fintech (neobank), not a chartered bank, and
+    holds no banking licence; it is a consumer mobile/web product only.
+    Regulated banking functions are delivered through partner institutions
+    (Peoples Bank of Canada for everyday accounts, ATB Financial as Mastercard
+    credit-card issuer, formerly Concentra Bank / now Equitable Bank for
+    savings), none of which surface a Neo-branded public API.
+
+    Third-party access to Neo accounts today is aggregator-only: consumer data
+    is reachable through Flinks (a National Bank-owned Canadian aggregator) and
+    Plaid via credential/screen-scraping access, not a documented first-party
+    API. Open Banking Tracker lists "No API products" for Neo and names Flinks
+    as the supported connectivity path.
+
+    No downloadable OpenAPI/Swagger definition was found or harvested (none is
+    published). No FDX participation is documented, and Neo publishes no
+    Consumer-Driven Banking (CDB) posture — Canada's federal Consumer-Driven
+    Banking framework (Budget 2024, FCAC-overseen) is legislated but not yet
+    operational, so no first-party CDB/FDX data API exists. No US "1033"
+    posture applies (Neo is a Canadian entity). Because there is no public API,
+    no authentication model (OAuth2/OIDC/API-key/mTLS) is documented for any
+    developer-facing surface.
+
+    Neo does operate a public GitHub organization (github.com/neofinancial,
+    ~19 repos of internal engineering tooling — ESLint config, Serverless
+    plugins, GitHub Actions, GraphQL scalars; no API specs) and an engineering
+    blog (engineering.neofinancial.com).
+  charterType: Fintech / neobank (not a chartered bank; no Canadian banking licence)
+  firstPartyDeveloperPortal: false
+  downloadableSpecs: false
+  specProvenance: none
+  fdxParticipant: false
+  cdbPosture: none-published
+  posture1033: not-applicable (Canadian entity)
+  authModel: none-documented
+  dataAccess: aggregator-only (Flinks, Plaid)
+  bankingPartners:
+    - Peoples Bank of Canada (everyday accounts, current)
+    - ATB Financial (Mastercard credit-card issuer)
+    - Concentra Bank / Equitable Bank (savings, historical)
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public first-party REST API is documented on any Neo-owned host.
+    - protocol: GraphQL
+      scheme: https
+      documented: false
+      note: Neo publishes open-source GraphQL scalar libraries on GitHub, but no public GraphQL API endpoint.
+  probes:
+    - url: https://developer.neofinancial.com
+      status: '000'
+      note: Does not resolve — no developer portal.
+    - url: https://developers.neofinancial.com
+      status: '000'
+      note: Does not resolve.
+    - url: https://api.neofinancial.com
+      status: '000'
+      note: Does not resolve — no public API host.
+    - url: https://docs.neofinancial.com
+      status: '000'
+      note: Does not resolve.
+    - url: https://www.neofinancial.com
+      status: '200'
+      note: Consumer marketing/product site; no developer or API links.
+    - url: https://github.com/neofinancial
+      status: '200'
+      note: Public GitHub org, internal engineering tooling only; no API specs.
+    - url: https://engineering.neofinancial.com/
+      status: '200'
+      note: Engineering blog.
+    - url: https://support.neofinancial.com/hc/en-ca
+      status: '200'
+      note: Consumer help centre.
+    - url: https://status.neofinancial.com
+      status: '000'
+      note: No public status page.
+sources:
+  - url: https://www.neofinancial.com
+    type: Website
+    note: Consumer product site; no developer/API section, no open-banking mention.
+  - url: https://github.com/neofinancial
+    type: GitHubOrganization
+    note: ~19 public repos of internal engineering tooling; no OpenAPI/SDK/API specs.
+  - url: https://engineering.neofinancial.com/
+    type: Blog
+    note: Neo engineering blog.
+  - url: https://www.openbankingtracker.com/provider/neofinancial
+    type: ThirdPartyProfile
+    note: Lists "No API products" for Neo; names Flinks as the aggregator connectivity path.
+actions:
+  apisListed: 0
+  openapiHarvested: false
+  reason: |
+    Identity-only bootstrap. Neo Financial exposes no public first-party API,
+    no developer portal, and no downloadable spec, so no apis[] entries and no
+    openapi/ artifacts were created. Data access to Neo accounts is
+    aggregator-only (Flinks, Plaid). This is the honest, non-fabricated result
+    for a Canadian consumer neobank under a voluntary, not-yet-operational open
+    banking regime.

@@ -1,0 +1,56 @@
+aid: neo-financial
+url: https://raw.githubusercontent.com/api-evangelist/neo-financial/refs/heads/main/apis.yml
+name: Neo Financial
+kind: company
+description: >-
+  Neo Financial is a Calgary- and Winnipeg-based Canadian fintech (neobank)
+  founded in 2019 by the founders of SkipTheDishes, offering credit cards,
+  savings, money, investing, and mortgage products to consumers. Neo is not a
+  chartered bank and holds no Canadian banking licence; it delivers
+  CDIC-eligible deposits and card issuance through regulated partner
+  institutions — Peoples Bank of Canada for everyday accounts, ATB Financial as
+  Mastercard credit-card issuer, and formerly Concentra Bank (now part of
+  Equitable Bank) for savings. Neo operates a consumer mobile and web platform
+  only and publishes no first-party public developer API or developer portal;
+  third-party access to Neo accounts today is available solely through data
+  aggregators such as Flinks (a National Bank-owned Canadian aggregator) and
+  Plaid via credential/screen-scraping access, not a documented first-party
+  API. Canada's federal Consumer-Driven Banking (open banking) framework,
+  legislated in Budget 2024 and overseen by the Financial Consumer Agency of
+  Canada, is not yet operational, so no first-party FDX or CDB data API exists.
+  Neo maintains a public GitHub organization of internal engineering tooling and
+  an engineering blog, but ships no public API products.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Fintech
+- Neobank
+- Consumer Finance
+- Credit Cards
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.neofinancial.com/
+- type: GitHubOrganization
+  url: https://github.com/neofinancial
+- type: LinkedIn
+  url: https://www.linkedin.com/company/neo-financial
+- type: Blog
+  url: https://www.neofinancial.com/blog
+- type: Blog
+  url: https://engineering.neofinancial.com/
+- type: Support
+  url: https://support.neofinancial.com/hc/en-ca
+- type: PrivacyPolicy
+  url: https://www.neofinancial.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://legal.neo.cc/platform-terms-conditions
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
