@@ -22,6 +22,15 @@ description: >-
   an engineering blog, but ships no public API products.
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
+- Financial-Services
+- Banking
+- Canada
+- Fintech
+- Neobank
+- Consumer Finance
+- Credit Cards
+- Data Aggregation
+tags_raw:
 - Financial Services
 - Banking
 - Canada
