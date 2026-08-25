@@ -6,14 +6,13 @@
       "feed_url": "https://www.linkedin.com/company/neo-financial",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     },
     {
       "source": "https://www.neofinancial.com/blog/feed.xml",
       "feed_url": "https://www.neofinancial.com/blog/feed.xml",
       "title": "",
-      "saved": 5,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -24,6 +23,6 @@
       "method": "discovered"
     }
   ],
-  "post_count": 60,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 62,
+  "fetched": "2026-08-22T20:20:02Z"
 }
