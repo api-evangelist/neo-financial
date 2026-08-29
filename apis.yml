@@ -1,5 +1,8 @@
 aid: neo-financial
 url: https://raw.githubusercontent.com/api-evangelist/neo-financial/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Neo maintains a public GitHub organization of internal engineering tooling and an engineering blog, but ships no public API products."
 name: Neo Financial
 kind: company
 description: >-
