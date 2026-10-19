@@ -1,16 +1,125 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/neo-financial/integrations
 - https://n8n.io/integrations/neo-financial/
 - https://composio.dev/toolkits/neo-financial
 - https://monid.ai/tools/neo-financial
 checked:
+- https://api.nuget.org/v3
 - https://composio.dev/toolkits/neo-financial
+- https://crates.io/api/v1
 - https://monid.ai/tools/neo-financial
 - https://n8n.io/integrations/neo-financial/
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://zapier.com/apps/neo-financial/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@neofinancial/chrono
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@neofinancial/chrono'
+      version: 0.7.1
+      released: '2026-06-29'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@neofinancial/chrono
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: '@neofinancial/chrono-mongo-datastore'
+      version: 0.7.1
+      released: '2026-06-29'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@neofinancial/chrono-mongo-datastore
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: '@neofinancial/chrono-postgres-datastore'
+      version: 0.5.2-alpha.0
+      released: '2026-06-29'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@neofinancial/chrono-postgres-datastore
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: awsx
+      version: 1.4.2
+      released: '2026-06-29'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/awsx
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: ccscan
+      version: 1.1.2
+      released: '2025-09-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/ccscan
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: config-dug
+      version: 1.10.1
+      released: '2026-07-15'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/config-dug
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: graphql-date-scalars
+      version: 0.2.0
+      released: '2025-09-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/graphql-date-scalars
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: node-flinks
+      version: 0.6.0
+      released: '2025-09-23'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/node-flinks
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    - name: serverless-plugin-neo
+      version: 0.3.2
+      released: '2022-11-21'
+      released_field: modified
+      lapsed: true
+      page: https://www.npmjs.com/package/serverless-plugin-neo
+      repo_leg: github-org:neofinancial
+      publisher_leg: email:neofinancial.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 templates: []
