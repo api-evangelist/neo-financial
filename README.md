@@ -1,4 +1,4 @@
-# Neo Financial (neo-financial)
+# Neo Financial
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,50 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Neo Financial is a Calgary- and Winnipeg-based Canadian fintech (neobank) founded in 2019 by the founders of SkipTheDishes, offering credit cards, savings, money, investing, and mortgage products to consumers. Neo is not a chartered bank and holds no Canadian banking licence; it delivers CDIC-eligible deposits and card issuance through regulated partner institutions — Peoples Bank of Canada for everyday accounts, ATB Financial as Mastercard credit-card issuer, and formerly Concentra Bank (now part of Equitable Bank) for savings.
+Neo Financial is a Calgary- and Winnipeg-based Canadian fintech (neobank) founded in 2019 by the founders of SkipTheDishes, offering credit cards, savings, money, investing, and mortgage products to consumers. Neo is not a chartered bank and holds no Canadian banking licence; it delivers CDIC-eligible deposits and card issuance through regulated partner institutions — Peoples Bank of Canada for everyday accounts, ATB Financial as Mastercard credit-card issuer, and formerly Concentra Bank (now part of Equitable Bank) for savings. Neo operates a consumer mobile and web platform only and publishes no first-party public developer API or developer portal; third-party access to Neo accounts today is available solely through data aggregators such as Flinks (a National Bank-owned Canadian aggregator) and Plaid via credential/screen-scraping access, not a documented first-party API. Canada's federal Consumer-Driven Banking (open banking) framework, legislated in Budget 2024 and overseen by the Financial Consumer Agency of Canada, is not yet operational, so no first-party FDX or CDB data API exists. Neo maintains a public GitHub organization of internal engineering tooling and an engineering blog, but ships no public API products.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/neo-financial/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/neo-financial/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Fintech · Neobank · Consumer Finance · Credit Cards
 
-## Open-Finance / API Posture
+## Neo Financial on APIs.io
 
-Neo Financial operates a consumer mobile and web platform only. It publishes **no first-party public developer API and no developer portal** — `developer.neofinancial.com`, `api.neofinancial.com`, and `docs.neofinancial.com` do not resolve. Third-party access to Neo accounts today is available solely through data aggregators such as **Flinks** (a National Bank-owned Canadian aggregator) and **Plaid**, via credential/screen-scraping access rather than a documented first-party API.
+Everything profiled for Neo Financial is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/neo-financial/](https://apis.io/providers/neo-financial/)** — or go straight to one of the APIs or properties below.
 
-Canada's federal **Consumer-Driven Banking** (open banking) framework — legislated in Budget 2024 and the Fall Economic Statement 2024, and overseen by the Financial Consumer Agency of Canada (FCAC) — is **legislated but not yet operational**. Neo has published no first-party FDX/CDB data-access API and no stated Consumer-Driven Banking posture.
+### Published properties
 
-Neo does maintain a public **GitHub organization** ([github.com/neofinancial](https://github.com/neofinancial)) of internal engineering tooling (ESLint config, Serverless plugins, GitHub Actions, GraphQL scalars) and an **engineering blog** ([engineering.neofinancial.com](https://engineering.neofinancial.com/)), but none of these are public API products.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (1)
 
-- Financial Services
-- Banking
-- Canada
-- Fintech
-- Neobank
-- Consumer Finance
-- Credit Cards
-- Data Aggregation
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Neo Financial Domain Security](https://apis.io/security/neo-financial/neo-financial-domain-security/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-None. Neo Financial exposes no public first-party developer API. Consumer account data is reachable only through third-party aggregators (Flinks, Plaid).
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.neofinancial.com/)
-- [GitHub Organization](https://github.com/neofinancial)
-- [LinkedIn](https://www.linkedin.com/company/neo-financial)
-- [Blog](https://www.neofinancial.com/blog)
-- [Engineering Blog](https://engineering.neofinancial.com/)
 - [Support](https://support.neofinancial.com/hc/en-ca)
-- [Privacy Policy](https://www.neofinancial.com/legal/privacy-policy)
-- [Terms of Service](https://legal.neo.cc/platform-terms-conditions)
+- [Blog](https://www.neofinancial.com/blog)
+- [Terms of service](https://legal.neo.cc/platform-terms-conditions)
+- [Privacy policy](https://www.neofinancial.com/legal/privacy-policy)
+- [GitHub](https://github.com/neofinancial)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 9.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/neo-financial/](https://apis.io/providers/neo-financial/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Neo Financial: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/neo-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
